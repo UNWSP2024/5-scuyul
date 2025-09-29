@@ -9,9 +9,13 @@ def main():
     print("------")
 
     #wait for key press
-    input("Press enter to see answer...")
+    answer = input("Answer: ")
     print("")
-    print("the answer is: " + str(num1 + num2))
+
+    if answer == str((num1 + num2)):
+        print("Correct, Great Job!")
+    else:
+        print("Incorrect the correct answer was: " + str((num1 + num2)))
 
 if __name__ == "__main__":
     main()
